@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 200px;
+        font-family: 'Montserrat';
+        color: #FF6060;
+        padding: 50px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 36px;
+        font-family: 'Montserrat';
+        color: #FF6060;
+    }
+
+    .return-link {
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        color: black;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
