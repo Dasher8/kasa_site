@@ -1,4 +1,38 @@
-html,
-body {
-  color: red;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-container {
+    width: 210px;
+    height: 68px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      list-style: none;
+      color: #000000;
+
+      li {
+        padding-right: 57px;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 500;
+        cursor: pointer;
+
+        .active {
+          text-decoration: underline;
+        }
+      }
+
+      li:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
