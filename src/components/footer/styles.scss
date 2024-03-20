@@ -1,0 +1,30 @@
+.footer {
+  width: 100vw;
+  height: 209px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .footer-container {
+    width: 100vw;
+    height: 209px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+    box-sizing: border-box;
+
+    img {
+        padding-top: 50px;
+    }
+
+    p {
+        font-size: 24px;
+        font-family: 'Montserrat';
+      color: white;
+      padding-top: 30px;
+      margin: 0;
+    }
+  }
+}
