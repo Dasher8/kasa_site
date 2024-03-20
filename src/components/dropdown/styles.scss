@@ -1,0 +1,72 @@
+.dropdown {
+  text-decoration: none;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Montserrat";
+  }
+
+  .drop-btn {
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background: #ff6060;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      padding: 8px;
+    }
+
+    .fa-chevron-up {
+      color: white;
+      padding: 10px;
+    }
+
+    .fa-chevron-down {
+      display: none;
+      color: white;
+      padding: 10px;
+    }
+  }
+
+  .dropdown-content {
+    display: none;
+    width: 500px;
+    background: #f6f6f6;
+    border-radius: 5px;
+
+    .first-tag {
+      padding-top: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: "Montserrat";
+      margin: 0;
+      padding: 3px 10px;
+    }
+
+    .last-tag {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.dropdown:active .dropdown-content {
+  display: block;
+}
+
+.fa-chevron-down:hover {
+  display: block;
+}
+
+.fa-chevron-up:hover {
+  display: none;
+}
