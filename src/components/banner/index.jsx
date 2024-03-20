@@ -1,11 +1,19 @@
-import React from 'react';
+import React from "react";
 
 import "./style.scss";
 
-function banner() {
+import BannerImg from "../../assets/banner.svg";
+
+function Banner() {
   return (
-    <div>banner</div>
-  )
+    <div className="banner">
+      <div className="img-container">
+        <div className="img-style"></div>
+        <img className="banner-img" src={BannerImg} alt="Banner" />
+      </div>
+      <h1>Chez vous, partout et ailleurs</h1>
+    </div>
+  );
 }
 
-export default banner
+export default Banner;
