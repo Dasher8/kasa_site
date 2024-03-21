@@ -1,19 +1,21 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import "./style.scss";
 
-import BannerImg from "../../assets/banner.svg";
-
-function Banner() {
+function Banner({ imgSrc, bannerTitle }) {
   return (
     <div className="banner">
       <div className="img-container">
         <div className="img-style"></div>
-        <img className="banner-img" src={BannerImg} alt="Banner" />
+        <Banner imgSrc={imgSrc} bannerTitle={bannerTitle} />
       </div>
-      <h1>Chez vous, partout et ailleurs</h1>
     </div>
   );
 }
+
+Banner.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  bannerTitle: PropTypes.string,
+};
 
 export default Banner;
