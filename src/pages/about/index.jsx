@@ -13,6 +13,9 @@ export default function About() {
       <Header />
       <Banner imgSrc={imgSrc} />
       <Dropdown dropDownTitle={dropDownTitle} options={["Wifigvhbjn,dmb.kxjdb,mxnbcv.lzkdfblzn.vbz.lfkb/zlkfbnlzdnb lcn "]}/>
+      <Dropdown dropDownTitle={dropDownTitle} options={["Wifigvhbjn,dmb.kxjdb,mxnbcv.lzkdfblzn.vbz.lfkb/zlkfbnlzdnb lcn "]}/>
+      <Dropdown dropDownTitle={dropDownTitle} options={["Wifigvhbjn,dmb.kxjdb,mxnbcv.lzkdfblzn.vbz.lfkb/zlkfbnlzdnb lcn "]}/>
+      <Dropdown dropDownTitle={dropDownTitle} options={["Wifigvhbjn,dmb.kxjdb,mxnbcv.lzkdfblzn.vbz.lfkb/zlkfbnlzdnb lcn "]}/>
       <Footer />
     </>
   );

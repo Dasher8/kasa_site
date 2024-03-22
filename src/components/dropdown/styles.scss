@@ -1,6 +1,7 @@
 .dropdown {
   text-decoration: none;
   list-style: none;
+  margin: 20px;
 
   a {
     text-decoration: none;
@@ -10,7 +11,7 @@
   }
 
   .drop-btn {
-    width: 500px;
+    width: 80%;
     height: 40px;
     border-radius: 5px;
     color: white;
@@ -40,7 +41,7 @@
   }
 
   .dropdown-content {
-    width: 500px;
+    width: 80%;
     background: #f6f6f6;
     border-radius: 5px;
     padding: 0;
