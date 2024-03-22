@@ -7,7 +7,8 @@ function Banner({ imgSrc, bannerTitle }) {
     <div className="banner">
       <div className="img-container">
         <div className="img-style"></div>
-        <Banner imgSrc={imgSrc} bannerTitle={bannerTitle} />
+        <img src={imgSrc} className="banner-img" alt="Banner"></img>
+        <h1>{bannerTitle}</h1>
       </div>
     </div>
   );
