@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "./styles.scss";
 
-function Dropdown({dropDownTitle}) {
+function Dropdown({dropDownTitle, options}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -18,13 +18,9 @@ function Dropdown({dropDownTitle}) {
         </div>
         {isOpen && (
           <ul className="dropdown-content">
-            <li className="first-tag">Climatisation</li>
-            <li>Wi-Fi</li>
-            <li>Cuisine</li>
-            <li>Espace de travail</li>
-            <li>Fer à repasser</li>
-            <li>Sèche-cheveux</li>
-            <li className="last-tag">Cintres</li>
+            {options.map((option, index) => (
+              <li key={index}>{option}</li>
+            ))}
           </ul>
         )}
       </div>
@@ -34,6 +30,7 @@ function Dropdown({dropDownTitle}) {
 
 Dropdown.propTypes = {
   dropDownTitle: PropTypes.string,
+  options: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Dropdown;
