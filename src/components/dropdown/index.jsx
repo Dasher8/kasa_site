@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import "./styles.scss";
 
-function Dropdown() {
+function Dropdown({dropDownTitle}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -12,7 +13,7 @@ function Dropdown() {
     <>
       <div className="dropdown">
         <div className="drop-btn" onClick={toggleDropdown}>
-          <p>Équipements</p>
+          <p>{dropDownTitle}</p>
           <i className={`fa-solid fa-chevron-${isOpen ? "down" : "up"}`}></i>
         </div>
         {isOpen && (
@@ -30,5 +31,9 @@ function Dropdown() {
     </>
   );
 }
+
+Dropdown.propTypes = {
+  dropDownTitle: PropTypes.string,
+};
 
 export default Dropdown;
