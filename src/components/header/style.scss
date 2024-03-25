@@ -9,29 +9,28 @@ header {
   }
 
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    a {
-      text-decoration: none;
+    ul {
+      display: flex;
       list-style: none;
-      color: #000000;
+      margin: 0;
+      padding: 0;
 
       li {
         padding-right: 57px;
         font-family: "Montserrat";
         font-size: 24px;
         font-weight: 500;
+        color: black;
         cursor: pointer;
 
-        .active {
-          text-decoration: underline;
-        }
-      }
+        a {
+          text-decoration: none;
+          color: #000000;
 
-      li:hover {
-        text-decoration: underline;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
