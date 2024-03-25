@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import "./styles.scss"
+
 import Card from "../../components/card";
 
 export default function Cards() {
@@ -16,9 +18,16 @@ export default function Cards() {
   }, []);
 
   return (
-    <div>
+    <div className="cards-container">
       {flats.map((item, index) => (
+        <>
         <Card key={index} title={item.title} />
+        <Card key={index} title={item.title} />
+        <Card key={index} title={item.title} />
+        <Card key={index} title={item.title} />
+        <Card key={index} title={item.title} />
+        <Card key={index} title={item.title} />
+        </>
       ))}
     </div>
   );
