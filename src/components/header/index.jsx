@@ -1,5 +1,7 @@
 import React from "react";
 
+import { NavLink } from "react-router-dom";
+
 import "./style.scss";
 
 import LogoRed from "../../assets/logo_red.svg";
@@ -13,12 +15,14 @@ export default function Header() {
         </a>
       </div>
       <nav className="navbar">
-        <a href="#">
-          <li>Accueil</li>
-        </a>
-        <a href="#">
-          <li>A Propos</li>
-        </a>
+        <ul>
+          <li>
+            <NavLink to={"/"}>Accueil</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/about"}>A Propos</NavLink>
+          </li>
+        </ul>
       </nav>
     </header>
   );

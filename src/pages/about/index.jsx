@@ -12,10 +12,17 @@ export default function About() {
     <>
       <Header />
       <Banner imgSrc={imgSrc} />
-      <Dropdown dropDownTitle={dropDownTitle} options={["Wifigvhbjn,dmb.kxjdb,mxnbcv.lzkdfblzn.vbz.lfkb/zlkfbnlzdnb lcn "]}/>
-      <Dropdown dropDownTitle={dropDownTitle} options={["Wifigvhbjn,dmb.kxjdb,mxnbcv.lzkdfblzn.vbz.lfkb/zlkfbnlzdnb lcn "]}/>
-      <Dropdown dropDownTitle={dropDownTitle} options={["Wifigvhbjn,dmb.kxjdb,mxnbcv.lzkdfblzn.vbz.lfkb/zlkfbnlzdnb lcn "]}/>
-      <Dropdown dropDownTitle={dropDownTitle} options={["Wifigvhbjn,dmb.kxjdb,mxnbcv.lzkdfblzn.vbz.lfkb/zlkfbnlzdnb lcn "]}/>
+      <Dropdown title={dropDownTitle}>
+          <ul>
+            <li>qsdqsd</li>
+            <li>qsdqsd</li>
+          </ul>
+      </Dropdown>
+      <Dropdown title={dropDownTitle}>
+        <p>
+qsdqsdqsd
+          </p>
+      </Dropdown>
       <Footer />
     </>
   );
