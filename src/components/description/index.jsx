@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./styles.scss";
 import Dropdown from "../../components/dropdown";
 
@@ -8,6 +8,8 @@ export default function Description({
   tags,
   description,
   equipments,
+  host,
+  rating
 }) {
   const dropDownTitle = "Description";
   const secondDropDownTitle = "Équipements";
@@ -17,8 +19,14 @@ export default function Description({
       <h1>{title}</h1>
       <p>{location}</p>
       <span>{tags}</span>
-      <Dropdown title={dropDownTitle}>{description}</Dropdown>
-      <Dropdown title={secondDropDownTitle}>{equipments}</Dropdown>
+      <div className="host">{host}</div>
+      <span className="rating">{rating}</span>
+      <Dropdown title={dropDownTitle}>
+        <p>{description}</p>
+      </Dropdown>
+      <Dropdown title={secondDropDownTitle}>
+        <ul>{equipments}</ul>
+      </Dropdown>
     </div>
   );
 }
