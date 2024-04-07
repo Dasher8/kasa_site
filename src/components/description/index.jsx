@@ -9,7 +9,7 @@ export default function Description({
   description,
   equipments,
   host,
-  rating
+  rating,
 }) {
   const dropDownTitle = "Description";
   const secondDropDownTitle = "Équipements";
@@ -18,14 +18,27 @@ export default function Description({
     <div className="container">
       <h1>{title}</h1>
       <p>{location}</p>
-      <span>{tags}</span>
-      <div className="host">{host}</div>
+      <div className="tags">
+        {tags.map((tag, index) => (
+          <ul key={index}>
+            <li>{tag}</li>
+          </ul>
+        ))}
+      </div>
+      <div className="host">
+        <img src={host.picture} alt={host.name} className="host-picture" />
+        <p className="host-name">{host.name}</p>
+      </div>
       <span className="rating">{rating}</span>
       <Dropdown title={dropDownTitle}>
         <p>{description}</p>
       </Dropdown>
       <Dropdown title={secondDropDownTitle}>
-        <ul>{equipments}</ul>
+        <ul>
+          {equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
+        </ul>
       </Dropdown>
     </div>
   );
