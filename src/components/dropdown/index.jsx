@@ -11,15 +11,13 @@ function Dropdown({ title, children }) {
   };
 
   return (
-    <>
       <div className="dropdown">
         <button className="drop-btn" onClick={toggleDropdown}>
-          <p>{title}</p>
+          <span>{title}</span>
           <i className={`fa-solid fa-chevron-${isOpen ? "down" : "up"}`}></i>
         </button>
         {isOpen && <div className="dropdown-content">{children}</div>}
       </div>
-    </>
   );
 }
 

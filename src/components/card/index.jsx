@@ -4,7 +4,7 @@ import "./style.scss";
 
 export default function Card({ id, title, cover }) {
   return (
-    <div className="card" id={id}>
+    <div className="card" id={id} >
       <img src={cover} alt={title} className="cover" />
       <span className="title">{title}</span>
     </div>

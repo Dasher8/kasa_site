@@ -1,6 +1,7 @@
 .dropdown {
   width: 582px;
-  height: 45px;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   list-style: none;
   margin: 20px;
@@ -53,14 +54,12 @@
 
   .dropdown-content {
     width: 582px;
-    height: 100%;
     background: #f6f6f6;
     border-radius: 5px;
     padding: 0 10px;
     margin: 0;
     font-size: 18px;
     font-family: "Montserrat";
-    position: absolute;
     box-sizing: border-box;
 
     ul {

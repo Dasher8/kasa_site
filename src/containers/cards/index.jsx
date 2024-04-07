@@ -21,14 +21,12 @@ export default function Cards() {
     <section className="cards-section">
       <div className="cards-container">
         {flats.map((item, index) => (
-          <>
             <Card
               key={index}
               id={item.id}
               title={item.title}
               cover={item.cover}
             />
-          </>
         ))}
       </div>
     </section>
