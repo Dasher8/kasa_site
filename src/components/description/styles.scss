@@ -1,0 +1,99 @@
+.ddd {
+  display: flex;
+  flex-direction: column;
+  .description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    .title {
+      font-size: 36px;
+      font-weight: 500;
+      font-family: "Montserrat";
+      color: #ff6060;
+      margin: 10px 0;
+    }
+
+    .location {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: "Montserrat";
+      color: black;
+      margin: 0;
+    }
+
+    .tags-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 20px 0;
+
+      .tags-list {
+        list-style: none;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        margin: 0;
+        padding: 0;
+
+        .tag {
+          width: 115px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          background-color: #ff6060;
+          border-radius: 10px;
+          padding: 0px;
+          box-sizing: border-box;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .host-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+      .host {
+        width: 167px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+
+        .host-name {
+          font-size: 18px;
+          font-family: "Montserrat";
+          color: #ff6060;
+          margin: 0;
+          padding: 0;
+          text-align: right;
+        }
+
+        .host-picture {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          margin-left: 10px;
+          object-fit: contain;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+  .drop-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
