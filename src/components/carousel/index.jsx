@@ -13,16 +13,28 @@ const Carousel = ({ pictures, title }) => {
     setSlide(slide === 0 ? pictures.length - 1 : slide - 1);
   };
 
+  const showNavigation = pictures.length > 1;
+
   return (
     <div className="carousel">
-      <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
+      {showNavigation && (
+        <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
+      )}
       {pictures.map((item, index) => (
         <React.Fragment key={index}>
-          {index === slide && <img src={item} alt={title} className={"slide"} />}
-        </ React.Fragment>
+          {index === slide && (
+            <img src={item} alt={title} className={"slide"} />
+          )}
+        </React.Fragment>
       ))}
-      <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
-      <div className="slide-indicator">{`${slide + 1}/${pictures.length}`}</div>
+      {showNavigation && (
+        <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
+      )}
+      {showNavigation && (
+        <div className="slide-indicator">{`${slide + 1}/${
+          pictures.length
+        }`}</div>
+      )}
     </div>
   );
 };
