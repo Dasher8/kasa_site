@@ -15,7 +15,7 @@ function Banner({ src, title }) {
 }
 
 Banner.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string,
   title: PropTypes.string,
 };
 

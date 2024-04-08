@@ -11,7 +11,7 @@ export default function About() {
   return (
     <>
       <Header />
-      <Banner imgSrc={imgSrc} />
+      <Banner src={imgSrc} />
       <Dropdown title={dropDownTitle}>
         <ul>
           <li>qsdqsd</li>
