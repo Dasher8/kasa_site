@@ -91,12 +91,21 @@
         }
       }
 
-      .fa-solid .fa-star .active {
-        color: #ff6060;
-      }
+      .rating {
+        display: flex;
+        margin: 15px 0;
 
-      .fa-solid .fa-star .inactive {
-        color: #e3e3e3;
+        .fa-solid {
+          padding: 10px;
+        }
+
+        .fa-solid .fa-star .active {
+          color: #ff6060;
+        }
+
+        .fa-solid .fa-star .inactive {
+          color: #e3e3e3;
+        }
       }
     }
   }
