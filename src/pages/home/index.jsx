@@ -7,7 +7,6 @@ import Footer from "../../components/footer";
 import imageBanner from "../../assets/banner.svg";
 import Description from "../../components/description";
 import Carousel from "../../components/carousel";
-import { slides } from "../../../public/data/carousel.json";
 import { data } from "../../../public/data/flats.json";
 
 export default function Home() {
@@ -28,16 +27,8 @@ export default function Home() {
     <div>
       <Header />
       <Banner src={imageBanner} title={"Chez vous, partout et ailleurs"} />
-      {flat && <Carousel pictures={flat.pictures} title={flat.title} />}
-      <Description
-        title={title}
-        location={location}
-        tags={tags}
-        description={description}
-        equipments={equipments}
-        host={host}
-        rating={rating}
-      />
+      
+      
       <Cards />
       <Footer />
     </div>

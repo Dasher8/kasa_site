@@ -1,20 +1,48 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+
+import Header from "../../components/header";
+import Carousel from "../../components/carousel";
+import Description from "../../components/description";
+import Footer from "../../components/footer";
 
 import { useParams } from "react-router-dom";
+import Error404 from "../error404";
 
 export default function Flat() {
   const { id } = useParams();
+  const [flat, setFlat] = useState(null);
 
   useEffect(() => {
     fetch("/data/flats.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-        // Parcours les data pour regarder s'il y en a un qui correspondant à id
-
-        // Si pas de resultat alors on affiche la page 404
+        if (data && Array.isArray(data.data)) {
+          const selectedFlat = data.data.find((item) => item.id === id);
+          if (selectedFlat) {
+            setFlat(selectedFlat);
+          }
+        }
       });
-  }, []); // => se lance au chargement du composant
+  }, [id]);
 
-  return <div>page d'un appartement {id} </div>;
+  if (!flat) {
+    return <Error404 />;
+  }
+
+  return (
+    <div>
+      <Header />
+      {flat && <Carousel pictures={flat.pictures} title={flat.title} />}
+      <Description
+        title={flat.title}
+        location={flat.location}
+        tags={flat.tags}
+        description={flat.description}
+        equipments={flat.equipments}
+        host={flat.host}
+        rating={flat.rating}
+      />
+      <Footer />
+    </div>
+  );
 }
