@@ -5,21 +5,20 @@ import Header from "../../components/header";
 import Banner from "../../components/banner";
 import Footer from "../../components/footer";
 import imageBanner from "../../assets/banner.svg";
-import Description from "../../components/description";
-import Carousel from "../../components/carousel";
-import { data } from "../../../public/data/flats.json";
 
 export default function Home() {
-  const { title, location, tags, description, equipments, host, rating } =
-    data[0];
-
   const [flat, setFlat] = useState(null);
 
   useEffect(() => {
     fetch("/data/flats.json")
       .then((response) => response.json())
-      .then((response) => {
-        setFlat(response.data[0]);
+      .then((data) => {
+        if (data && Array.isArray(data.data) && data.data.length > 0) {
+          setFlat(data.data[0]); // Set the first flat from the data array
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching flats:", error);
       });
   }, []);
 
@@ -27,9 +26,7 @@ export default function Home() {
     <div>
       <Header />
       <Banner src={imageBanner} title={"Chez vous, partout et ailleurs"} />
-      
-      
-      <Cards />
+      <Cards flat={flat} />
       <Footer />
     </div>
   );
