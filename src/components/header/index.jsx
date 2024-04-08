@@ -19,10 +19,20 @@ export default function Header() {
       <nav className="navbar">
         <ul>
           <li>
-            <NavLink to={"/"}>Accueil</NavLink>
+            <NavLink
+              to={"/"}
+              className={location.pathname === "/" ? "active" : ""}
+            >
+              Accueil
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/about"}>A Propos</NavLink>
+            <NavLink
+              to={"/about"}
+              className={location.pathname === "/about" ? "active" : ""}
+            >
+              A Propos
+            </NavLink>
           </li>
         </ul>
       </nav>
