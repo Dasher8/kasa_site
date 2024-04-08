@@ -8,17 +8,23 @@ import imgSrc from "../../assets/about_banner.svg";
 
 export default function About() {
   const dropDownTitle = "Fiabilité";
+  const secondDropDownTitle = "Respect";
+  const thirdDropDownTitle = "Service";
+  const forthDropDownTitle = "Sécurité";
   return (
     <>
       <Header />
       <Banner src={imgSrc} />
       <Dropdown title={dropDownTitle}>
-        <ul>
-          <li>qsdqsd</li>
-          <li>qsdqsd</li>
-        </ul>
+      <p>qsdqsdqsd</p>
       </Dropdown>
-      <Dropdown title={dropDownTitle}>
+      <Dropdown title={secondDropDownTitle}>
+        <p>qsdqsdqsd</p>
+      </Dropdown>
+      <Dropdown title={thirdDropDownTitle}>
+        <p>qsdqsdqsd</p>
+      </Dropdown>
+      <Dropdown title={forthDropDownTitle}>
         <p>qsdqsdqsd</p>
       </Dropdown>
       <Footer />
