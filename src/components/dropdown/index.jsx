@@ -18,7 +18,9 @@ function Dropdown({ title, children }) {
           style={{ transform: isOpen ? "rotate(-180deg)" : "rotate(0deg)" }}
         ></i>
       </button>
-      {isOpen && <div className="dropdown-content">{children}</div>}
+      <div className={`dropdown-content ${isOpen ? "open" : ""}`}>
+        {children}
+      </div>
     </div>
   );
 }
