@@ -6,6 +6,8 @@ import Banner from "../../components/banner";
 import Footer from "../../components/footer";
 import imageBanner from "../../assets/banner.svg";
 
+import "./styles.scss"
+
 export default function Home() {
   const [flat, setFlat] = useState(null);
 
@@ -23,7 +25,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="home">
       <Header />
       <Banner src={imageBanner} title={"Chez vous, partout et ailleurs"} />
       <Cards flat={flat} />
