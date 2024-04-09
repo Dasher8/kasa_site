@@ -4,6 +4,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 50px;
 
   .logo-container {
     width: 210px;
@@ -24,6 +26,7 @@ header {
         font-weight: 500;
         color: $secondary-color;
         cursor: pointer;
+        box-sizing: border-box;
 
         a {
           text-decoration: none;

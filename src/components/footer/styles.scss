@@ -1,32 +1,24 @@
-@import '../../../variables.scss';
+@import "../../../variables.scss";
 
-.footer {
-  width: 100vw;
+.footer-container {
+  width: 100%;
   height: 209px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  background: $secondary-color;
+  box-sizing: border-box;
 
-  .footer-container {
-    width: 100vw;
-    height: 209px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: $secondary-color;
-    box-sizing: border-box;
+  img {
+    padding-top: 50px;
+  }
 
-    img {
-        padding-top: 50px;
-    }
-
-    p {
-        font-size: 24px;
-        font-family: $primary-font;
-      color: $tertiary-color;
-      padding-top: 30px;
-      margin: 0;
-    }
+  p {
+    font-size: 24px;
+    font-family: $primary-font;
+    color: $tertiary-color;
+    padding-top: 30px;
+    margin: 0;
   }
 }
