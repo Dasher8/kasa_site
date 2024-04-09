@@ -37,18 +37,16 @@
       font-family: "Montserrat";
     }
 
-    .fa-chevron-up {
-      color: white;
-      padding: 10px;
-      right: 1rem;
-      position: absolute;
+    i {
+      transition: transform 0.4s ease-in-out;
     }
 
-    .fa-chevron-down {
+    .fa-chevron-up {
+      font-size: large;
       color: white;
       padding: 10px;
-      position: absolute;
       right: 1rem;
+      position: absolute;
     }
   }
 
