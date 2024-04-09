@@ -12,7 +12,7 @@ function Dropdown({ title, children }) {
   return (
     <div className="dropdown">
       <button className="drop-btn" onClick={toggleDropdown}>
-        <span>{title}</span>
+        <span className="title">{title}</span>
         <i
           className={`fa-solid fa-chevron-up`}
           style={{ transform: isOpen ? "rotate(-180deg)" : "rotate(0deg)" }}

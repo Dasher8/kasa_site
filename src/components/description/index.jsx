@@ -26,7 +26,7 @@ export default function Description({
     ));
 
   return (
-    <section className="ddd">
+    <section className="main">
       <div className="description-container">
         <div>
           <h1 className="title">{title}</h1>

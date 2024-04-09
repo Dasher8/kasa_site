@@ -1,4 +1,6 @@
-.ddd {
+@import '../../../variables.scss';
+
+.main {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -12,16 +14,16 @@
     .title {
       font-size: 36px;
       font-weight: 500;
-      font-family: "Montserrat";
-      color: #ff6060;
+      font-family: $primary-font;
+      color: $primary-color;
       margin: 10px 0;
     }
 
     .location {
       font-size: 18px;
       font-weight: 500;
-      font-family: "Montserrat";
-      color: black;
+      font-family: $primary-font;
+      color: $secondary-color;
       margin: 0;
     }
 
@@ -36,7 +38,7 @@
         text-decoration: none;
         font-size: 14px;
         font-weight: 700;
-        font-family: "Montserrat";
+        font-family: $primary-font;
         margin: 0;
         padding: 0;
 
@@ -46,8 +48,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          color: white;
-          background-color: #ff6060;
+          color: $tertiary-color;
+          background-color: $primary-color;
           border-radius: 10px;
           padding: 0px;
           box-sizing: border-box;
@@ -74,8 +76,8 @@
 
         .host-name {
           font-size: 18px;
-          font-family: "Montserrat";
-          color: #ff6060;
+          font-family: $primary-font;
+          color: $primary-color;
           margin: 0;
           padding: 0;
           text-align: right;
@@ -100,11 +102,11 @@
         }
 
         .fa-solid .fa-star .active {
-          color: #ff6060;
+          color: $primary-color;
         }
 
         .fa-solid .fa-star .inactive {
-          color: #e3e3e3;
+          color: $inactive-star-color;
         }
       }
     }

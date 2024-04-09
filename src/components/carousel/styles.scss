@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .carousel {
   width: 90%;
   height: 415px;
@@ -14,7 +16,7 @@
     position: absolute;
     cursor: pointer;
     font-size: 50px;
-    color: white;
+    color: $tertiary-color;
   }
 
   .fa-chevron-left {
@@ -37,11 +39,11 @@
 
   .slide-indicator {
     position: absolute;
-    color: black;
+    color: $secondary-color;
     bottom: 1rem;
-    color: white;
+    color: $tertiary-color;
     font-size: 18px;
     font-weight: 500;
-    font-family: "Montserrat";
+    font-family: $primary-font;
   }
 }
