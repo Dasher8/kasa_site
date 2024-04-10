@@ -1,5 +1,13 @@
 @import '../../../variables.scss';
 
+.error-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
 
 .container {
     width: 100vw;
@@ -21,14 +29,17 @@
         font-size: 36px;
         font-family: $primary-font;
         color: $primary-color;
+        padding-bottom: 100px;
     }
 
-    .return-link {
+    .return-link p {
         font-size: 18px;
         font-family: $primary-font;
         font-weight: 400;
         color: $secondary-color;
         text-decoration: underline;
         cursor: pointer;
+        padding-bottom: 0;
     }
+}
 }
