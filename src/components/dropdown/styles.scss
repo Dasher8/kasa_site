@@ -1,7 +1,7 @@
 @import '../../../variables.scss';
 
 .dropdown {
-  width: 582px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -17,7 +17,7 @@
   }
 
   .drop-btn {
-    width: 582px;
+    width: 100%;
     height: 45px;
     border-radius: 5px;
     color: $tertiary-color;
@@ -51,7 +51,7 @@
   }
 
   .dropdown-content {
-    width: 582px;
+    width: 100%;
     background: $background-color;
     border-radius: 5px;
     padding: 0 10px;
@@ -65,13 +65,20 @@
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     &.open {
-      max-height: 200px;
+      max-height: 100%;
       opacity: 1;
+      box-sizing: border-box;
+      
+    }
+
+    p {
+      font-size: 18px;
+      padding: 20px 10px;
     }
 
     ul {
       margin: 0;
-      padding: 10px 0;
+      padding: 10px ;
       li {
         font-size: 18px;
         font-family: $primary-font;

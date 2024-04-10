@@ -32,11 +32,13 @@ export default function Description({
           <h1 className="title">{title}</h1>
           <p className="location">{location}</p>
           <div className="tags-container">
-            {tags.map((tag, index) => (
-              <ul className="tags-list" key={index}>
-                <li className="tag">{tag}</li>
-              </ul>
-            ))}
+            <ul className="tags-list">
+              {tags.map((tag, index) => (
+                <li className="tag" key={index}>
+                  {tag}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <div className="host-container">

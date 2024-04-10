@@ -1,11 +1,15 @@
-@import '../../../variables.scss';
+@import "../../../variables.scss";
 
 .main {
   width: 90%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  margin-top: 20px;
 
   .description-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +38,9 @@
       margin: 20px 0;
 
       .tags-list {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
         list-style: none;
         text-decoration: none;
         font-size: 14px;
@@ -43,17 +50,18 @@
         padding: 0;
 
         .tag {
-          width: 115px;
+          width: 100%;
           height: 25px;
           display: flex;
           justify-content: center;
           align-items: center;
+          flex: 1;
           color: $tertiary-color;
           background-color: $primary-color;
           border-radius: 10px;
-          padding: 0px;
           box-sizing: border-box;
           margin-right: 10px;
+          padding: 5px;
         }
       }
     }
@@ -113,7 +121,7 @@
   }
 
   .drop-container {
-    width: 100%;
+    width: 102%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;

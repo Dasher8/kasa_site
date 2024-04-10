@@ -7,6 +7,7 @@ import Footer from "../../components/footer";
 
 import { useParams } from "react-router-dom";
 import Error404 from "../error404";
+import "./styles.scss";
 
 export default function Flat() {
   const { id } = useParams();
@@ -30,8 +31,9 @@ export default function Flat() {
   }
 
   return (
-    <div>
+    <div className="flat">
       <Header />
+      <div className="flat-main">
       {flat && <Carousel pictures={flat.pictures} title={flat.title} />}
       <Description
         title={flat.title}
@@ -43,6 +45,7 @@ export default function Flat() {
         rating={flat.rating}
       />
       <Footer />
+      </div>
     </div>
   );
 }
