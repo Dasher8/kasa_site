@@ -120,9 +120,9 @@
   }
 
   .drop-container {
-    width: 102%;
+    width: calc(100% + 30px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     box-sizing: border-box;
     margin-bottom: 50px;
