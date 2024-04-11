@@ -1,18 +1,5 @@
-.about {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
-
-    .about-main {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex: 1;
-    }
+.page-about {
+  .page-content {
+    width: 100%;
+  }
 }

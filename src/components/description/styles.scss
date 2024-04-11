@@ -104,6 +104,12 @@
         display: flex;
         margin: 15px 0;
 
+        .icon-full{
+          color: #ff6060;
+        }
+        .icon-empty {
+          color:#e3e3e3;
+        }
         .fa-solid {
           padding: 10px;
         }

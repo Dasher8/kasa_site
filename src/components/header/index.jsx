@@ -21,7 +21,7 @@ export default function Header() {
           <li>
             <NavLink
               to={"/"}
-              className={location.pathname === "/" ? "active" : ""}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
               Accueil
             </NavLink>
@@ -29,7 +29,7 @@ export default function Header() {
           <li>
             <NavLink
               to={"/about"}
-              className={location.pathname === "/about" ? "active" : ""}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
               A Propos
             </NavLink>

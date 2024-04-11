@@ -1,45 +1,36 @@
-@import '../../../variables.scss';
+@import "../../../variables.scss";
 
-.error-main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.page-error {
+  .page-content {
+    min-height: 100vh;
 
     h1 {
-        font-size: 200px;
-        font-family: $primary-font;
-        color: $primary-color;
-        padding: 50px;
-        margin: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 200px;
+      font-family: $primary-font;
+      color: $primary-color;
+      padding: 50px;
+      margin: 0;
     }
 
     p {
-        font-size: 36px;
-        font-family: $primary-font;
-        color: $primary-color;
-        padding-bottom: 100px;
+      width: 100%;
+      text-align: center;
+      font-size: 36px;
+      font-family: $primary-font;
+      color: $primary-color;
+      padding-bottom: 100px;
     }
 
     .return-link p {
-        font-size: 18px;
-        font-family: $primary-font;
-        font-weight: 400;
-        color: $secondary-color;
-        text-decoration: underline;
-        cursor: pointer;
-        padding-bottom: 0;
+      font-size: 18px;
+      font-family: $primary-font;
+      font-weight: 400;
+      color: $secondary-color;
+      text-decoration: underline;
+      cursor: pointer;
+      padding-bottom: 0;
     }
-}
+  }
 }

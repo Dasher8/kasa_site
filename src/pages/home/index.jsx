@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import LayoutDefault from "../../layouts/default";
 
 import Cards from "../../containers/cards";
 import Header from "../../components/header";
@@ -6,7 +7,7 @@ import Banner from "../../components/banner";
 import Footer from "../../components/footer";
 import imageBanner from "../../assets/banner.svg";
 
-import "./styles.scss"
+import "./styles.scss";
 
 export default function Home() {
   const [flat, setFlat] = useState(null);
@@ -25,11 +26,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="home">
-      <Header />
+    <LayoutDefault page="home">
       <Banner src={imageBanner} title={"Chez vous, partout et ailleurs"} />
       <Cards flat={flat} />
-      <Footer />
-    </div>
+    </LayoutDefault>
   );
 }

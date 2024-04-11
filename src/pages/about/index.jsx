@@ -1,4 +1,5 @@
 import React from "react";
+import LayoutDefault from "../../layouts/default";
 
 import Header from "../../components/header";
 import Banner from "../../components/banner";
@@ -14,12 +15,10 @@ export default function About() {
   const thirdDropDownTitle = "Service";
   const forthDropDownTitle = "Sécurité";
   return (
-    <div className="about">
-      <Header />
-      <div className="about-main">
+    <LayoutDefault page="about">
       <Banner src={imgSrc} />
       <Dropdown title={dropDownTitle}>
-      <p>qsdqsdqsd</p>
+        <p>qsdqsdqsd</p>
       </Dropdown>
       <Dropdown title={secondDropDownTitle}>
         <p>qsdqsdqsd</p>
@@ -30,8 +29,6 @@ export default function About() {
       <Dropdown title={forthDropDownTitle}>
         <p>qsdqsdqsd</p>
       </Dropdown>
-      </div>
-      <Footer />
-    </div>
+    </LayoutDefault>
   );
 }
