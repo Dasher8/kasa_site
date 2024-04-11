@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: $secondary-color;
 
   .footer-container {
     height: 209px;
@@ -12,7 +13,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: $secondary-color;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -27,6 +27,33 @@
       color: $tertiary-color;
       padding-top: 30px;
       margin: 0;
+      text-align: start;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $secondary-color;
+    .footer-container {
+      width: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 122px;
+        height: 39px;
+        padding-top: 20px;
+      }
+      p {
+        font-size: 13px;
+        padding-top: 15px;
+        text-align: center;
+      }
     }
   }
 }
