@@ -1,4 +1,4 @@
-@import '../../../variables.scss';
+@import "../../../variables.scss";
 
 .cards-section {
   width: 90%;
@@ -19,14 +19,13 @@
 }
 
 @media (max-width: 768px) {
-
   .cards-section {
-  .cards-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    background: none;
+    .cards-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      background: none;
+    }
   }
-}
 }

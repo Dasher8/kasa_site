@@ -47,3 +47,29 @@
     font-family: $primary-font;
   }
 }
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 255px;
+    border-radius: 10px;
+
+    .fa-chevron-left,
+    .fa-chevron-right {
+      position: absolute;
+      cursor: pointer;
+      font-size: 25px;
+      color: $tertiary-color;
+    }
+
+    .fa-chevron-left {
+      left: 0.5rem;
+    }
+  
+    .fa-chevron-right {
+      right: 0.5rem;
+    }
+    .slide-indicator {
+      display: none;
+    }
+  }
+}
