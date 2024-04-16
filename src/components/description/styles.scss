@@ -1,7 +1,7 @@
 @import "../../../variables.scss";
 
 .main {
-  width: 90%;
+  width: calc(100% - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +126,7 @@
   }
 
   .drop-container {
-    width: calc(100% + 30px);
+    width: calc(100% + 40px);
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -137,6 +137,7 @@
 
 @media (max-width: 768px) {
   .main {
+    width: 90%;
     .description-container {
       flex-direction: column;
       justify-content: flex-start;
@@ -155,7 +156,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin: 20px 0;
+        margin: 10px 0;
 
         .tags-list {
           font-size: 14px;

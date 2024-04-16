@@ -1,10 +1,8 @@
 import React from "react";
 import LayoutDefault from "../../layouts/default";
 
-import Header from "../../components/header";
 import Banner from "../../components/banner";
 import Dropdown from "../../components/dropdown";
-import Footer from "../../components/footer";
 import imgSrc from "../../assets/about_banner.svg";
 
 import "./styles.scss";

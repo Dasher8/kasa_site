@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import LayoutDefault from "../../layouts/default";
 
-import Header from "../../components/header";
 import Carousel from "../../components/carousel";
 import Description from "../../components/description";
-import Footer from "../../components/footer";
 
 import { useParams } from "react-router-dom";
 import Error404 from "../error404";

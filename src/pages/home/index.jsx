@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LayoutDefault from "../../layouts/default";
-
 import Cards from "../../containers/cards";
-import Header from "../../components/header";
 import Banner from "../../components/banner";
-import Footer from "../../components/footer";
 import imageBanner from "../../assets/banner.svg";
 
 import "./styles.scss";
