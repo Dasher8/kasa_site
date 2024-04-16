@@ -5,8 +5,6 @@ import LayoutDefault from "../../layouts/default";
 
 import "./styles.scss";
 
-import Header from "../../components/header";
-import Footer from "../../components/footer";
 
 export default function Error404() {
   return (

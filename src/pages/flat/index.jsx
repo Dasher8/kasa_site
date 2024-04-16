@@ -3,6 +3,7 @@ import LayoutDefault from "../../layouts/default";
 
 import Carousel from "../../components/carousel";
 import Description from "../../components/description";
+import Loader from "../../components/loader";
 
 import { useParams } from "react-router-dom";
 import Error404 from "../error404";
@@ -31,7 +32,7 @@ export default function Flat() {
   }, [id]);
 
   if (isLoading) {
-    return <p>chargement en cours</p>;
+    return <Loader />;
   }
 
   if (isError404) {

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
-import "./style.scss";
+import "./styles.scss";
 
 import LogoRed from "../../assets/logo_red.svg";
 
