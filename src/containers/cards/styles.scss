@@ -21,6 +21,8 @@
 
 @media (max-width: 768px) {
   .cards-section {
+    width: 90%;
+    padding: 0;
     .cards-container {
       flex-direction: column;
       justify-content: center;
