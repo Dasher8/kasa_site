@@ -105,21 +105,13 @@
         margin: 15px 0;
 
         .icon-full{
-          color: #ff6060;
+          color: $primary-color;
         }
         .icon-empty {
-          color:#e3e3e3;
+          color:$inactive-star-color;
         }
         .fa-solid {
           padding: 10px;
-        }
-
-        .fa-solid .fa-star .active {
-          color: $primary-color;
-        }
-
-        .fa-solid .fa-star .inactive {
-          color: $inactive-star-color;
         }
       }
     }
