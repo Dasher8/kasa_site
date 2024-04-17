@@ -5,7 +5,7 @@ import "./styles.scss";
 function Loader() {
   return (
     <div className="background">
-    <div class="loader">
+    <div className="loader">
       <div></div>
       <div></div>
       <div></div>
