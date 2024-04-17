@@ -2,7 +2,6 @@
 
 .page-error {
   .page-content {
-    min-height: 100vh;
     display: flex;
       justify-content: center;
       align-items: center;
@@ -34,7 +33,7 @@
       color: $secondary-color;
       text-decoration: underline;
       cursor: pointer;
-      padding-bottom: 0;
+      padding-bottom: 100px;
     }
   }
 }
@@ -58,7 +57,7 @@
       .return-link p {
         font-size: 14px;
         padding: 0;
-        margin: 0;
+        margin: 0 0 74px 0;
       }
     }
   }

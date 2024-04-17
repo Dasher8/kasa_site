@@ -16,16 +16,28 @@ export default function About() {
     <LayoutDefault page="about">
       <Banner src={imgSrc} />
       <Dropdown title={dropDownTitle}>
-        <p>qsdqsdqsd</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
       </Dropdown>
       <Dropdown title={secondDropDownTitle}>
-        <p>qsdqsdqsd</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
       </Dropdown>
       <Dropdown title={thirdDropDownTitle}>
-        <p>qsdqsdqsd</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
       </Dropdown>
       <Dropdown title={forthDropDownTitle}>
-        <p>qsdqsdqsd</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
       </Dropdown>
     </LayoutDefault>
   );
