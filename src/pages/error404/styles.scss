@@ -4,9 +4,9 @@
   .page-content {
     min-height: calc(100vh - 66px - 209px - 42px);
     display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     h1 {
       width: 100%;
@@ -39,14 +39,13 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .page-error {
     .page-content {
       min-height: calc(100vh - 66px - 209px - 10px);
 
       h1 {
-       font-size: 96px; 
+        font-size: 96px;
       }
 
       p {

@@ -1,6 +1,7 @@
 .page-flat {
 
   .page-content {
+    min-height: calc(100vh - 66px - 209px - 42px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +13,9 @@
   .page-flat {
     width: 100%;
     .page-content {
+      min-height: calc(100vh - 66px - 209px - 10px);
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       flex-direction: column;
     }
