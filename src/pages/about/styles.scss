@@ -1,10 +1,10 @@
 .page-about {
   .page-content {
     width: 100%;
+    min-height: calc(100vh - 66px - 209px - 10px);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    flex: 1;
   }
 }
