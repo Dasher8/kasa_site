@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import LayoutDefault from "../../layouts/default";
+import { useParams, useNavigate } from "react-router-dom";
 
 import Carousel from "../../components/carousel";
 import Description from "../../components/description";
 import Loader from "../../components/loader";
 
-import { useParams } from "react-router-dom";
-import Error404 from "../error404";
 import "./styles.scss";
 
 export default function Flat() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   const [flat, setFlat] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [isError404, setIsError404] = useState(false);
 
   useEffect(() => {
     fetch("/data/flats.json")
@@ -24,19 +24,16 @@ export default function Flat() {
           if (selectedFlat) {
             setFlat(selectedFlat);
           } else {
-            setIsError404(true);
+            navigate("/error");
           }
           setIsLoading(false);
         }
       });
-  }, [id]);
+      
+  }, [id, navigate]);
 
   if (isLoading) {
     return <Loader />;
-  }
-
-  if (isError404) {
-    return <Error404 />;
   }
 
   return (
