@@ -20,23 +20,26 @@ export default function Description({
     .map((_, index) => (
       <i
         key={index}
-        className="fa-solid fa-star"
-        style={{ color: index < note ? "#ff6060" : "#e3e3e3" }}
+        className={`fa-solid fa-star ${
+          index < note ? "icon-full" : "icon-empty"
+        }`}
       ></i>
     ));
 
   return (
-    <section className="ddd">
+    <section className="main">
       <div className="description-container">
         <div>
           <h1 className="title">{title}</h1>
           <p className="location">{location}</p>
           <div className="tags-container">
-            {tags.map((tag, index) => (
-              <ul className="tags-list" key={index}>
-                <li className="tag">{tag}</li>
-              </ul>
-            ))}
+            <ul className="tags-list">
+              {tags.map((tag, index) => (
+                <li className="tag" key={index}>
+                  {tag}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <div className="host-container">

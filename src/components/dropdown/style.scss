@@ -1,5 +1,7 @@
+@import "../../../variables.scss";
+
 .dropdown {
-  width: 582px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -7,19 +9,12 @@
   margin: 20px;
   box-sizing: border-box;
 
-  a {
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 600;
-    font-family: "Montserrat";
-  }
-
   .drop-btn {
-    width: 582px;
+    width: 100%;
     height: 45px;
     border-radius: 5px;
-    color: white;
-    background: #ff6060;
+    color: $tertiary-color;
+    background: $primary-color;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -31,16 +26,16 @@
     margin: 0;
     overflow: hidden;
 
-    p {
+    .title {
       padding: 0px;
       font-size: 18px;
       font-weight: 600;
-      font-family: "Montserrat";
+      font-family: $primary-font;
     }
 
     .fa-chevron-up {
       font-size: large;
-      color: white;
+      color: $tertiary-color;
       padding: 10px;
       right: 1rem;
       position: absolute;
@@ -49,13 +44,13 @@
   }
 
   .dropdown-content {
-    width: 582px;
-    background: #f6f6f6;
+    width: 100%;
+    background: $background-color;
     border-radius: 5px;
-    padding: 0 10px;
-    margin: 0;
+    padding: 10px 10px;
+    margin-top: -20px;
     font-size: 18px;
-    font-family: "Montserrat";
+    font-family: $primary-font;
     box-sizing: border-box;
     /* Animation for dropdown content */
     max-height: 0;
@@ -63,18 +58,50 @@
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     &.open {
-      max-height: 200px;
+      max-height: 100%;
       opacity: 1;
+      box-sizing: border-box;
+    }
+
+    p {
+      font-size: 18px;
+      padding: 20px 10px;
     }
 
     ul {
       margin: 0;
-      padding: 10px 0;
+      padding: 10px;
       li {
         font-size: 18px;
-        font-family: "Montserrat";
+        font-family: $primary-font;
         padding: 3px 0;
         list-style: none;
+      }
+    }
+  }
+
+  &.active {
+    .drop-btn .fa-solid {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    width: 90%;
+    margin: 10px;
+    .drop-btn {
+      height: 30px;
+
+      .title {
+        font-size: 13px;
+      }
+
+      .fa-chevron-up {
+        font-size: medium;
+        padding: 5px;
+        right: 0.3rem;
       }
     }
   }

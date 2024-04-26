@@ -1,0 +1,26 @@
+.page-flat {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+  .page-content {
+    min-height: calc(100vh - 66px - 209px - 42px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-flat {
+    width: 100%;
+    .page-content {
+      min-height: calc(100vh - 66px - 209px - 10px);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

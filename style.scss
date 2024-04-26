@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('src/assets/Montserrat-Bold.ttf');
+}

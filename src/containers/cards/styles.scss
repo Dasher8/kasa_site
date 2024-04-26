@@ -1,5 +1,11 @@
+@import "../../../variables.scss";
+
 .cards-section {
-  width: 90%;
+  @include width;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 40px;
 
   .cards-container {
     width: 100%;
@@ -7,10 +13,22 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    background: #f6f6f6;
-    padding: 15px;
-    margin: 25px;
+    background: $background-color;
     border-radius: 25px;
     box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-section {
+    @include width-mobile;
+    padding: 0;
+    .cards-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      background: none;
+    }
   }
 }

@@ -1,9 +1,15 @@
-.ddd {
-  width: 90%;
+@import "../../../variables.scss";
+
+.main {
+  @include width;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  margin-top: 20px;
 
   .description-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,16 +18,16 @@
     .title {
       font-size: 36px;
       font-weight: 500;
-      font-family: "Montserrat";
-      color: #ff6060;
+      font-family: $primary-font;
+      color: $primary-color;
       margin: 10px 0;
     }
 
     .location {
       font-size: 18px;
       font-weight: 500;
-      font-family: "Montserrat";
-      color: black;
+      font-family: $primary-font;
+      color: $secondary-color;
       margin: 0;
     }
 
@@ -32,26 +38,29 @@
       margin: 20px 0;
 
       .tags-list {
+        display: flex;
+        flex-direction: row;
         list-style: none;
         text-decoration: none;
         font-size: 14px;
         font-weight: 700;
-        font-family: "Montserrat";
+        font-family: $primary-font;
         margin: 0;
         padding: 0;
 
         .tag {
-          width: 115px;
-          height: 25px;
+          max-width: 100%;
+          height: 28px;
           display: flex;
           justify-content: center;
           align-items: center;
-          color: white;
-          background-color: #ff6060;
+
+          color: $tertiary-color;
+          background-color: $primary-color;
           border-radius: 10px;
-          padding: 0px;
           box-sizing: border-box;
           margin-right: 10px;
+          padding: 10px 10px;
         }
       }
     }
@@ -74,8 +83,8 @@
 
         .host-name {
           font-size: 18px;
-          font-family: "Montserrat";
-          color: #ff6060;
+          font-family: $primary-font;
+          color: $primary-color;
           margin: 0;
           padding: 0;
           text-align: right;
@@ -95,27 +104,121 @@
         display: flex;
         margin: 15px 0;
 
+        .icon-full{
+          color: $primary-color;
+        }
+        .icon-empty {
+          color:$inactive-star-color;
+        }
         .fa-solid {
           padding: 10px;
-        }
-
-        .fa-solid .fa-star .active {
-          color: #ff6060;
-        }
-
-        .fa-solid .fa-star .inactive {
-          color: #e3e3e3;
         }
       }
     }
   }
 
   .drop-container {
-    width: 100%;
+    width: calc(100% + 40px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     box-sizing: border-box;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    @include width-mobile;
+    .description-container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .title {
+        width: 90%;
+        font-size: 18px;
+        margin: 0 0 10px;
+        word-wrap: break-word;
+      }
+
+      .location {
+        font-size: 14px;
+      }
+      .tags-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 0;
+
+        .tags-list {
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 14px;
+          font-weight: 600;
+
+          .tag {
+            max-width: 100%;
+            height: 18px;
+            border-radius: 7px;
+            box-sizing: border-box;
+            margin: 10px 5px 0 0;
+            padding: 10px 10px;
+            font-size: 10px;
+            box-sizing: border-box;
+          }
+        }
+      }
+
+      .host-container {
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+
+        .host {
+          height: 35px;
+          justify-content: flex-end;
+          align-items: center;
+          flex-direction: row;
+
+          .host-name {
+            max-width: 80px;
+            font-size: 13px;
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            word-wrap: break-word;
+          }
+
+          .host-picture {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .rating {
+          display: flex;
+          margin: 5px 0;
+
+          .fa-solid {
+            font-size: 13px;
+            padding: 3px;
+          }
+        }
+      }
+    }
+    .drop-container {
+      width: 110%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
   }
 }

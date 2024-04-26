@@ -1,29 +1,90 @@
-.container {
+@import "../../../variables.scss";
+
+.page-error {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .page-content {
+    min-height: calc(100vh - 66px - 209px - 42px);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     h1 {
-        font-size: 200px;
-        font-family: 'Montserrat';
-        color: #FF6060;
-        padding: 50px;
-        margin: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 200px;
+      font-family: $primary-font;
+      color: $primary-color;
+      padding: 50px;
+      margin: 0;
     }
 
     p {
-        font-size: 36px;
-        font-family: 'Montserrat';
-        color: #FF6060;
+      width: 100%;
+      text-align: center;
+      font-size: 36px;
+      font-family: $primary-font;
+      color: $primary-color;
+      padding: 0 30px 100px 30px;
+
+      .space {
+        display: none;
+      }
     }
 
-    .return-link {
-        font-size: 18px;
-        font-family: 'Montserrat';
-        font-weight: 400;
-        color: black;
-        text-decoration: underline;
-        cursor: pointer;
+    .return-link p {
+      font-size: 18px;
+      font-family: $primary-font;
+      font-weight: 400;
+      color: $secondary-color;
+      text-decoration: underline;
+      cursor: pointer;
+      padding-bottom: 100px;
     }
+  }
+}
+
+@media (max-width: 874px) {
+  .page-error {
+    .page-content {
+      p {
+        .space {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page-error {
+    .page-content {
+      min-height: calc(100vh - 66px - 209px - 10px);
+
+      h1 {
+        font-size: 96px;
+      }
+
+      p {
+        font-size: 18px;
+
+        padding: 0 15px 100px 15px;
+        box-sizing: border-box;
+
+        .space {
+          display: block;
+        }
+      }
+
+      .return-link p {
+        font-size: 14px;
+        padding: 0;
+        margin: 0 0 74px 0;
+      }
+    }
+  }
 }

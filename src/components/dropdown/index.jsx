@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./styles.scss";
+import "./style.scss";
 
 function Dropdown({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,13 +10,10 @@ function Dropdown({ title, children }) {
   };
 
   return (
-    <div className="dropdown">
+    <div className={`dropdown ${isOpen && "active"}`}>
       <button className="drop-btn" onClick={toggleDropdown}>
-        <span>{title}</span>
-        <i
-          className={`fa-solid fa-chevron-up`}
-          style={{ transform: isOpen ? "rotate(-180deg)" : "rotate(0deg)" }}
-        ></i>
+        <span className="title">{title}</span>
+        <i className={`fa-solid fa-chevron-up`}></i>
       </button>
       <div className={`dropdown-content ${isOpen ? "open" : ""}`}>
         {children}

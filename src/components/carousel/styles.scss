@@ -1,5 +1,7 @@
+@import '../../../variables.scss';
+
 .carousel {
-  width: 90%;
+  @include width;
   height: 415px;
   display: flex;
   justify-content: center;
@@ -8,13 +10,14 @@
   border-radius: 25px;
   overflow: hidden;
   position: relative;
+  margin-top: 30px;
 
   .fa-chevron-left,
   .fa-chevron-right {
     position: absolute;
     cursor: pointer;
     font-size: 50px;
-    color: white;
+    color: $tertiary-color;
   }
 
   .fa-chevron-left {
@@ -37,11 +40,38 @@
 
   .slide-indicator {
     position: absolute;
-    color: black;
+    color: $secondary-color;
     bottom: 1rem;
-    color: white;
+    color: $tertiary-color;
     font-size: 18px;
     font-weight: 500;
-    font-family: "Montserrat";
+    font-family: $primary-font;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    @include width-mobile;
+    height: 255px;
+    border-radius: 10px;
+
+    .fa-chevron-left,
+    .fa-chevron-right {
+      position: absolute;
+      cursor: pointer;
+      font-size: 25px;
+      color: $tertiary-color;
+    }
+
+    .fa-chevron-left {
+      left: 0.5rem;
+    }
+  
+    .fa-chevron-right {
+      right: 0.5rem;
+    }
+    .slide-indicator {
+      display: none;
+    }
   }
 }
