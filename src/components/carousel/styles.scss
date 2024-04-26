@@ -1,7 +1,7 @@
 @import '../../../variables.scss';
 
 .carousel {
-  width: 90%;
+  @include width;
   height: 415px;
   display: flex;
   justify-content: center;
@@ -51,6 +51,7 @@
 
 @media (max-width: 768px) {
   .carousel {
+    @include width-mobile;
     height: 255px;
     border-radius: 10px;
 

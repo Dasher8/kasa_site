@@ -1,7 +1,7 @@
 @import "../../../variables.scss";
 
 .banner {
-  width: 90%;
+  @include width;
   height: 223px;
   display: flex;
   margin: 38px 0;
@@ -79,7 +79,7 @@
 
 @media (max-width: 768px) {
   .banner {
-    width: 90%;
+   @include width-mobile;
     height: 111px;
     margin: 10px;
 

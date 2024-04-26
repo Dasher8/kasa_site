@@ -1,8 +1,8 @@
 @import "../../../variables.scss";
 
 .cards-section {
-  width: 100%;
-  padding: 0 38px;
+  @include width;
+  padding: 0;
   display: flex;
   box-sizing: border-box;
   margin-bottom: 40px;
@@ -21,7 +21,7 @@
 
 @media (max-width: 768px) {
   .cards-section {
-    width: 90%;
+    @include width-mobile;
     padding: 0;
     .cards-container {
       flex-direction: column;

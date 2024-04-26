@@ -1,7 +1,7 @@
 @import "../../../variables.scss";
 
 .main {
-  width: calc(100% - 100px);
+  @include width;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +129,7 @@
 
 @media (max-width: 768px) {
   .main {
-    width: 90%;
+    @include width-mobile;
     .description-container {
       flex-direction: column;
       justify-content: flex-start;
