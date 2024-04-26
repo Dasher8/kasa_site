@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./styles.scss";
+import "./style.scss";
 
 function Dropdown({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);

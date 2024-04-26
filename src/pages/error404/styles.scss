@@ -24,7 +24,11 @@
       font-size: 36px;
       font-family: $primary-font;
       color: $primary-color;
-      padding-bottom: 100px;
+      padding: 0 30px 100px 30px;
+
+      .space {
+        display: none;
+      }
     }
 
     .return-link p {
@@ -35,6 +39,18 @@
       text-decoration: underline;
       cursor: pointer;
       padding-bottom: 100px;
+    }
+  }
+}
+
+@media (max-width: 874px) {
+  .page-error {
+    .page-content {
+      p {
+        .space {
+          display: block;
+        }
+      }
     }
   }
 }
@@ -50,9 +66,13 @@
 
       p {
         font-size: 18px;
-        word-break: break-word;
-        padding: 0 5px 100px 5px;
+
+        padding: 0 15px 100px 15px;
         box-sizing: border-box;
+
+        .space {
+          display: block;
+        }
       }
 
       .return-link p {

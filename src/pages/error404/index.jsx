@@ -10,7 +10,7 @@ export default function Error404() {
   return (
     <LayoutDefault page="error">
       <h1>404</h1>
-      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <p>Oups! La page que <br className="space"/> vous demandez n'existe pas.</p>
       <Link to={"/"} className="return-link">
         <p>Retourner sur la page d’accueil</p>
       </Link>
