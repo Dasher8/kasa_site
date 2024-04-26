@@ -9,7 +9,7 @@ import "./styles.scss";
 export default function Home() {
   return (
     <LayoutDefault page="home">
-      <Banner src={imageBanner} title={"Chez vous, partout et ailleurs"} />
+      <Banner src={imageBanner} title1={"Chez vous, "} title2={"partout et ailleurs"} />
       <Cards />
     </LayoutDefault>
   );

@@ -9,7 +9,7 @@ import Loader from "../../components/loader";
 import "./styles.scss";
 
 export default function Flat() {
-  const { id } = useParams();
+  const { id } = useParams(); // Obtient le paramètre d'URL "id"
   const navigate = useNavigate();
 
   const [flat, setFlat] = useState(null);
@@ -26,7 +26,7 @@ export default function Flat() {
           } else {
             navigate("/error");
           }
-          setIsLoading(false);
+          setIsLoading(false); 
         }
       });
       
