@@ -1,7 +1,7 @@
 @import "../../../variables.scss";
 
 .footer {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,6 +40,7 @@
     align-items: center;
     background: $secondary-color;
     margin-top: 10px;
+    
     .footer-container {
       width: 130px;
       display: flex;

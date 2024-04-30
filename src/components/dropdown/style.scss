@@ -104,5 +104,17 @@
         right: 0.3rem;
       }
     }
+
+    .dropdown-content {
+      p {
+        font-size: 16px;
+      }
+
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
